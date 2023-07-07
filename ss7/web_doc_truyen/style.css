@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+#header ul li {
+    padding: 15px;
+}
+
+#header-top {
+    background: white;
+    width: 175px;
+    border-radius: 11px;
+    color: red;
+}
+
+.color-red {
+    color: #636e72;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#content-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 15px;
+}
+
+#content-right {
+    grid-column-start: 5;
+    grid-column-end: 10;
+
+}
+
+.chanel {
+    color: #95a5a6;
+}
+
+.title {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.describe {
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fb-bold {
+    font-weight: bold;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.color-gray {
+    color: #636e72;
+}
+
+#footer h3 {
+    text-align: center;
+    padding: 30px
+}
+
+.header-link {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.header-link-firt a {
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+@media (max-width: 500px) {
+    #content {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #content-left ul {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap;  */
+
+    }
+
+    .header-link a {
+        width: calc(40% - 5px);
+        font-size: 15px;
+    }
+
+    #content-left ul li {
+        width: calc(49%-5px);
+        margin-left: 0;
+        display: flex;
+        /* justify-content: space-between; */
+        padding: 10px;
+
+    }
+
+    iframe.big {
+        width: 51%;
+
+    }
+    #content-right{
+        width: calc(50%-5px);
+        margin-left: 0;
+        padding: 0px 23px ;
+
+    }
+
+    p {
+        width: 100%;
+
+    }
+    div.title{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    div.title  p{
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 49%;
+        height: 20%;
+
+    }
+    .chanel p{
+        display: none;
+    }
+    div#header-top{
+        width: 100%;
+        background-color: #1abc9c;
+    }
+    h2{
+        font-size: 15px;
+        background: #1abc9c;
+    }
+
+
+}

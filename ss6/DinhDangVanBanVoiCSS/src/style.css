@@ -1,0 +1,12 @@
+.black{
+    font-weight: bold;
+}
+.baby_blue{
+    color: dodgerblue;
+}
+.blue{
+    color: darkblue;
+}
+.container{
+    display: flex;
+}
